@@ -187,11 +187,13 @@ nav ul li a:hover{
    Responsive Design
 ====================================== */
 
-/* Tablets */
-@media (max-width: 992px) {
+/* =========================
+   Tablet
+========================= */
+@media (max-width:992px){
 
     .hero h1{
-        font-size:2.7rem;
+        font-size:2.8rem;
     }
 
     .hero h2{
@@ -199,203 +201,205 @@ nav ul li a:hover{
     }
 
     .hero p{
-        font-size:1.4rem;
+        font-size:1.2rem;
     }
 
     .main-logo{
         width:180px;
     }
+
 }
 
-/* Mobile */
+
+/* =========================
+   Mobile
+========================= */
 @media (max-width:768px){
 
-    nav{
-        position:fixed;
-        top:15px;
-        right:15px;
-        left:auto;
-        transform:none;
+/* Navigation */
 
-        width:auto;
-        padding:0;
+nav{
+    position:fixed;
+    top:15px;
+    right:15px;
+    left:auto;
+    transform:none;
 
-        background:transparent;
-        backdrop-filter:none;
-        -webkit-backdrop-filter:none;
-        border:none;
-        box-shadow:none;
-    }
+    width:auto;
 
-    .menu-toggle{
-        display:flex;
-        justify-content:center;
-        align-items:center;
+    padding:0;
 
-        width:50px;
-        height:50px;
-
-        background:#111;
-        color:white;
-
-        border-radius:12px;
-        font-size:28px;
-        cursor:pointer;
-    }
-
-    nav ul{
-        display:none;
-
-        position:absolute;
-        top:60px;
-        right:0;
-
-        width:220px;
-
-        background:#111;
-        border-radius:12px;
-        overflow:hidden;
-    }
-
-    nav ul.active{
-        display:flex;
-        flex-direction:column;
-    }
-
-    nav ul li{
-        width:100%;
-    }
-
-    nav ul li a{
-        display:block;
-        padding:15px 20px;
-        color:white;
-    }
+    background:transparent;
+    border:none;
+    box-shadow:none;
+    backdrop-filter:none;
 }
 
-    .hero{
-        padding:110px 20px 50px;
-    }
+.menu-toggle{
+    display:flex;
+    justify-content:center;
+    align-items:center;
 
-    .main-logo{
-        width:120px;
-        margin-bottom:20px;
-    }
+    width:50px;
+    height:50px;
 
-    .hero h1{
-        font-size:2rem;
-        line-height:1.3;
-    }
+    background:#111;
+    color:#fff;
 
-    .hero h2{
-        font-size:1.35rem;
-        line-height:1.6;
-    }
-
-    .hero p{
-        font-size:1rem;
-        margin-bottom:25px;
-    }
-
-    .btn{
-        padding:12px 28px;
-        font-size:16px;
-    }
+    border-radius:12px;
+    font-size:30px;
+    cursor:pointer;
 }
 
-/* Small phones */
-@media (max-width: 480px) {
+nav ul{
 
-    nav{
-        width:95%;
-        padding:10px 15px;
-    }
+    display:none;
 
-    nav ul li a{
-        font-size:12px;
-    }
+    position:absolute;
 
-    .main-logo{
-        width:95px;
-    }
+    top:60px;
+    right:0;
 
-    .hero h1{
-        font-size:1.6rem;
-    }
+    width:220px;
 
-    .hero h2{
-        font-size:1.1rem;
-    }
-
-    .hero p{
-        font-size:0.9rem;
-    }
-
-    .btn{
-        width:100%;
-        max-width:220px;
-        padding:12px;
-    }
-    .hero-buttons{
     flex-direction:column;
+
+    background:#111;
+
+    border-radius:15px;
+
+    overflow:hidden;
+}
+
+nav ul.active{
+    display:flex;
+}
+
+nav ul li{
     width:100%;
 }
 
+nav ul li a{
+
+    display:block;
+
+    padding:16px 20px;
+
+    color:#fff;
+}
+
+/* Hero */
+
+.hero{
+
+    padding:110px 20px 60px;
+}
+
+.main-logo{
+
+    width:120px;
+
+    margin-bottom:20px;
+}
+
+.hero h1{
+
+    font-size:2rem;
+}
+
+.hero h2{
+
+    font-size:1.3rem;
+}
+
+.hero p{
+
+    font-size:1rem;
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:15px;
+}
+
 .hero-buttons .btn{
+
     width:220px;
 }
+
+/* About */
+
 .about{
-    padding:70px 25px;
+
+    padding:70px 20px;
 }
 
 .about-container{
+
     display:flex;
+
     flex-direction:column;
+
     align-items:center;
-    text-align:center;
+
     gap:30px;
 }
 
 .about-image{
+
     width:100%;
+
     text-align:center;
 }
 
 .about-image img{
-    width:100%;
-    max-width:320px;
-    height:auto;
-    border-radius:20px;
+
+    width:220px;
+
+    max-width:100%;
 }
 
 .about-content{
+
     width:100%;
+
     text-align:center;
 }
 
 .about-content h2{
+
     font-size:30px;
 }
 
-.about-content p{
-    font-size:16px;
-    line-height:1.8;
+.about-features{
+
+    display:grid;
+
+    grid-template-columns:1fr;
+
+    gap:12px;
 }
 
-.about-features{
-    grid-template-columns:1fr;
-}
+/* Gallery */
+
 .gallery{
+
     padding:70px 20px;
 }
 
 .gallery-container{
+
     grid-template-columns:1fr;
 }
 
-.section-title h2{
-    font-size:30px;
-}
+/* Products */
+
 .products{
 
     padding:70px 20px;
@@ -411,56 +415,125 @@ nav ul li a:hover{
     height:220px;
 }
 
-.product-card h3{
+/* Contact */
 
-    font-size:24px;
-}
-@media (max-width:768px){
+.contact{
 
-    .contact{
-    overflow-x:hidden;
+    padding:70px 20px;
 }
 
 .contact-container{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:25px;
+}
+
+.contact-info{
+
+    width:100%;
+}
+
+.contact-box{
+
     width:100%;
 }
 
 .contact-map{
+
     width:100%;
 }
 
 .contact-map iframe{
+
     width:100%;
-    height:250px;
-}
-    .contact-buttons{
-        display:flex;
-        justify-content:center;
-        gap:15px;
-        flex-wrap:wrap;
-        margin-top:20px;
-    }
 
+    height:280px;
+
+    border-radius:20px;
 }
 
+.contact-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+    margin-top:20px;
 }
+
+/* Footer */
+
 .footer-content{
+
     flex-direction:column;
+
     text-align:center;
+
+    gap:15px;
 }
 
 .footer p{
+
     font-size:13px;
 }
 
 .developer-logo{
+
     width:24px;
-    height:24px;
-}
 }
 
+}
 
 
+/* =========================
+   Small Phones
+========================= */
+
+@media (max-width:480px){
+
+.hero h1{
+
+    font-size:1.6rem;
+}
+
+.hero h2{
+
+    font-size:1.1rem;
+}
+
+.hero p{
+
+    font-size:.9rem;
+}
+
+.main-logo{
+
+    width:100px;
+}
+
+.btn{
+
+    width:220px;
+}
+
+.about-content h2{
+
+    font-size:26px;
+}
+
+.contact-map iframe{
+
+    height:220px;
+}
+
+}
 /* ===========================
    About Section
 =========================== */
