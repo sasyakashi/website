@@ -200,6 +200,191 @@ nav ul li a:hover{
     }
 }
 
+/* Mobile */
+@media (max-width: 768px) {
+
+    nav{
+        top:15px;
+        width:90%;
+        padding:12px 20px;
+    }
+
+    nav ul{
+        width:100%;
+        justify-content:space-around;
+        gap:0;
+    }
+
+    nav ul li a{
+        font-size:14px;
+    }
+
+    .hero{
+        padding:110px 20px 50px;
+    }
+
+    .main-logo{
+        width:120px;
+        margin-bottom:20px;
+    }
+
+    .hero h1{
+        font-size:2rem;
+        line-height:1.3;
+    }
+
+    .hero h2{
+        font-size:1.35rem;
+        line-height:1.6;
+    }
+
+    .hero p{
+        font-size:1rem;
+        margin-bottom:25px;
+    }
+
+    .btn{
+        padding:12px 28px;
+        font-size:16px;
+    }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+
+    nav{
+        width:95%;
+        padding:10px 15px;
+    }
+
+    nav ul li a{
+        font-size:12px;
+    }
+
+    .main-logo{
+        width:95px;
+    }
+
+    .hero h1{
+        font-size:1.6rem;
+    }
+
+    .hero h2{
+        font-size:1.1rem;
+    }
+
+    .hero p{
+        font-size:0.9rem;
+    }
+
+    .btn{
+        width:100%;
+        max-width:220px;
+        padding:12px;
+    }
+    .hero-buttons{
+    flex-direction:column;
+    width:100%;
+}
+
+.hero-buttons .btn{
+    width:220px;
+}
+.about{
+    padding:70px 25px;
+}
+
+.about-container{
+    flex-direction:column-reverse;
+    text-align:center;
+}
+
+.about-image img{
+    max-width:100%;
+}
+
+.about-content{
+
+    text-align:center;
+}
+
+.about-content h2{
+
+    font-size:30px;
+}
+
+.about-features{
+
+    grid-template-columns:1fr;
+}
+.gallery{
+    padding:70px 20px;
+}
+
+.gallery-container{
+    grid-template-columns:1fr;
+}
+
+.section-title h2{
+    font-size:30px;
+}
+.products{
+
+    padding:70px 20px;
+}
+
+.product-container{
+
+    grid-template-columns:1fr;
+}
+
+.product-card img{
+
+    height:220px;
+}
+
+.product-card h3{
+
+    font-size:24px;
+}
+.contact{
+
+    padding:70px 20px;
+}
+
+.contact-container{
+
+    grid-template-columns:1fr;
+}
+
+.contact-buttons{
+
+    justify-content:center;
+}
+
+.location{
+    padding:70px 20px;
+}
+
+.map-container iframe{
+    height:320px;
+}
+.footer-content{
+    flex-direction:column;
+    text-align:center;
+}
+
+.footer p{
+    font-size:13px;
+}
+
+.developer-logo{
+    width:24px;
+    height:24px;
+}
+}
+
+
 
 /* ===========================
    About Section
