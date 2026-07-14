@@ -388,14 +388,17 @@ nav ul li a{
 
 /* Gallery */
 
-.gallery{
+@media (max-width:768px){
 
-    padding:70px 20px;
-}
+    .gallery-container{
+        grid-template-columns:1fr;
+        gap:15px;
+    }
 
-.gallery-container{
+    .gallery-item img{
+        height:250px;
+    }
 
-    grid-template-columns:1fr;
 }
 
 /* Products */
