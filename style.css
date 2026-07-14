@@ -208,59 +208,69 @@ nav ul li a:hover{
 }
 
 /* Mobile */
-@media (max-width: 768px) {
+@media (max-width:768px){
 
     nav{
-    top:15px;
-    right:15px;
-    left:auto;
-    transform:none;
+        position:fixed;
+        top:15px;
+        right:15px;
+        left:auto;
+        transform:none;
 
-    width:auto;
-    padding:12px 18px;
+        width:auto;
+        padding:0;
 
-    justify-content:flex-end;
-    border-radius:15px;
-}
+        background:transparent;
+        backdrop-filter:none;
+        -webkit-backdrop-filter:none;
+        border:none;
+        box-shadow:none;
+    }
 
-.menu-toggle{
-    display:block;
-    font-size:30px;
-    color:white;
-    cursor:pointer;
-}
+    .menu-toggle{
+        display:flex;
+        justify-content:center;
+        align-items:center;
 
-nav ul{
-    display:none;
+        width:50px;
+        height:50px;
 
-    position:absolute;
-    top:60px;
-    right:0;
+        background:#111;
+        color:white;
 
-    width:220px;
+        border-radius:12px;
+        font-size:28px;
+        cursor:pointer;
+    }
 
-    background:#111;
-    border-radius:15px;
+    nav ul{
+        display:none;
 
-    flex-direction:column;
-    overflow:hidden;
+        position:absolute;
+        top:60px;
+        right:0;
 
-    box-shadow:0 10px 30px rgba(0,0,0,.35);
-}
+        width:220px;
 
-nav ul.active{
-    display:flex;
-}
+        background:#111;
+        border-radius:12px;
+        overflow:hidden;
+    }
 
-nav ul li{
-    width:100%;
-    margin:0;
-}
+    nav ul.active{
+        display:flex;
+        flex-direction:column;
+    }
 
-nav ul li a{
-    display:block;
-    padding:15px 20px;
-    font-size:15px;
+    nav ul li{
+        width:100%;
+    }
+
+    nav ul li a{
+        display:block;
+        padding:15px 20px;
+        color:white;
+    }
 }
 
     .hero{
