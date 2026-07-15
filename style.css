@@ -761,12 +761,9 @@ nav ul li a{
 }
 
 .gallery-container{
-
     display:grid;
-
-    grid-template-columns:repeat(2,1fr);
-
-    gap:30px;
+    grid-template-columns:repeat(2, 1fr);
+    gap:12px;              /* Reduce from 30px or 40px */
 }
 
 .gallery-item{
